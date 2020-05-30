@@ -1,0 +1,14 @@
+- name: !secret zone_two_name
+  latitude: !secret zone_two_latitude
+  longitude: !secret zone_two_longitude
+  radius: !secret zone_two_radius
+
+- name: !secret zone_three_name
+  latitude: !secret zone_three_latitude
+  longitude: !secret zone_three_longitude
+  radius: !secret zone_three_radius
+
+- name: !secret zone_four_name
+  latitude: !secret zone_four_latitude
+  longitude: !secret zone_four_longitude
+  radius: !secret zone_four_radius

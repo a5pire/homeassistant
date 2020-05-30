@@ -1,0 +1,9 @@
+# ubuntu server system monitor sensors
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_use_percent
+    - type: processor_use
+    - type: swap_use_percent
+    - type: last_boot

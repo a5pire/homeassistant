@@ -1,0 +1,6 @@
+# clicksend notification functionality (security alert automation)
+- platform: clicksend
+  name: Clicksend
+  username: !secret clicksend_username
+  api_key: !secret clicksend_apikey
+  recipient: [!secret clicksend_tim, !secret clicksend_tracey]

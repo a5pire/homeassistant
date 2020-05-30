@@ -1,0 +1,13 @@
+# sonarr sensor
+- platform: sonarr
+  api_key: !secret sonarr_api_key
+  host: !secret sonarr_host
+  port: !secret sonarr_port
+  monitored_conditions:
+    - series
+    - upcoming
+    - wanted
+    - queue
+    - commands
+    - diskspace
+  days: 7

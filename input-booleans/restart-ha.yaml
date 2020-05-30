@@ -1,0 +1,4 @@
+restart_ha:
+  name: Restart Home assistant
+  initial: off
+  icon: mdi:home-assistant

@@ -1,0 +1,55 @@
+# owntracks battery levels - oneplus6t
+- platform: mqtt
+  state_topic: owntracks/astroboy/oneplus6t
+  name: OnePlus6t Battery
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+  device_class: battery
+
+# owntracks connectivity - oneplus6t
+- platform: mqtt
+  state_topic: owntracks/astroboy/oneplus6t
+  name: OnePlus6t Connectivity
+  value_template: '{{ value_json.conn }}'
+
+# owntracks gps accuracy - oneplus6t
+- platform: mqtt
+  state_topic: owntracks/astroboy/oneplus6t
+  name: OnePlus6t GPS Accuracy
+  unit_of_measurement: "m"
+  value_template: '{{ value_json.acc }}'
+
+# owntracks altitude - oneplus6t
+- platform: mqtt
+  state_topic: owntracks/astroboy/oneplus6t
+  name: OnePlus6t Altitude
+  unit_of_measurement: "m"
+  value_template: '{{ value_json.alt }}'
+
+# owntracks battery levels - pixel3a
+- platform: mqtt
+  state_topic: owntracks/astroboy/pixel3a
+  name: Pixel3a Battery
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+  device_class: battery
+
+# owntracks connectivity - pixel3a
+- platform: mqtt
+  state_topic: owntracks/astroboy/pixel3a
+  name: Pixel3a Connectivity
+  value_template: '{{ value_json.conn }}'
+
+# owntracks gps accuracy - pixel3a
+- platform: mqtt
+  state_topic: owntracks/astroboy/pixel3a
+  name: Pixel3a GPS Accuracy
+  unit_of_measurement: "m"
+  value_template: '{{ value_json.acc }}'
+
+# owntracks altitude - pixel3a
+- platform: mqtt
+  state_topic: owntracks/astroboy/pixel3a
+  name: Pixel3a Altitude
+  unit_of_measurement: "m"
+  value_template: '{{ value_json.alt }}'
