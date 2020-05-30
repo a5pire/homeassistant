@@ -25,20 +25,11 @@ http:
 # mobile apps
 mobile_app:
 
-# owntracks
-owntracks:
-
 #tplink smart plugs
 tplink:
 
 # mqtt
 mqtt:
-  broker: 192.168.107.15
-  # broker: !secret mqtt_ip
-  # port: !secret mqtt_port
-  # client_id: home-assistant
-  # discovery: true
-  # discovery_prefix: homeassistant
 
 # spotify
 spotify:
