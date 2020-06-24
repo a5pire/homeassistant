@@ -28,9 +28,6 @@ mobile_app:
 # tplink smart plugs
 tplink:
 
-# mqtt server
-mqtt:
-
 # spotify
 spotify:
   client_id: !secret spotify_client_id
