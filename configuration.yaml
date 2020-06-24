@@ -25,10 +25,10 @@ http:
 # mobile apps
 mobile_app:
 
-#tplink smart plugs
+# tplink smart plugs
 tplink:
 
-# mqtt
+# mqtt server
 mqtt:
 
 # spotify
