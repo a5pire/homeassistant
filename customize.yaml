@@ -1,5 +1,6 @@
 person.tim:
   entity_picture: /local/images/tim.jpeg
-
 person.tracey:
   entity_picture: /local/images/tracey.jpeg
+zone.home:
+  radius: 50
