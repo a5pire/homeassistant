@@ -55,6 +55,8 @@ weather:
 nzbget:
   host: !secret nzbget_host
   port: !secret nzbget_port
+  username: !secret nzbget_username
+  password: nzbget_password
 
 # proxmox-ve
 proxmoxve:
