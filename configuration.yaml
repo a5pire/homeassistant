@@ -56,7 +56,7 @@ nzbget:
   host: !secret nzbget_host
   port: !secret nzbget_port
   username: !secret nzbget_username
-  password: nzbget_password
+  password: !secret nzbget_password
 
 # proxmox-ve
 proxmoxve:
@@ -67,6 +67,7 @@ proxmoxve:
     nodes:
       - node: !secret proxmox_node
         vms:
+          - !secret proxmox_vm_one
           - !secret proxmox_vm_two
           - !secret proxmox_vm_three
 
