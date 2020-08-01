@@ -26,15 +26,19 @@
       entity_id: media_player.little_foot_station
       data_template:
         message: "{% if now().hour > 9 or now().hour < 20 %} The washing machine cycle is complete. {% endif %}"
-
-- alias: Set washing machine to idle
-  trigger:
-    - platform: template
-      value_template: "{% if is_state('input_select.washing_machine_status', 'Complete') %}true{% endif %}"
-      for:
-        minutes: 5
-  action:
     - service: input_select.select_option
       data:
         entity_id: input_select.washing_machine_status
         option: Idle
+
+# - alias: Set washing machine to idle
+#   trigger:
+#     - platform: template
+#       value_template: "{% if is_state('input_select.washing_machine_status', 'Complete') %}true{% endif %}"
+#       for:
+#         minutes: 5
+#   action:
+#     - service: input_select.select_option
+#       data:
+#         entity_id: input_select.washing_machine_status
+#         option: Idle
