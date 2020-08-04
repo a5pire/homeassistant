@@ -4,6 +4,12 @@ default_config:
 
 discovery:
 
+homeassistant:
+  name: !secret home_name
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_altitude
+
 frontend:
   themes: !include_dir_merge_named themes
 
@@ -14,9 +20,6 @@ http:
 
 # mobile apps
 mobile_app:
-
-# tplink smart plugs
-tplink:
 
 # spotify
 spotify:
