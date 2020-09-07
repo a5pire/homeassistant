@@ -9,6 +9,8 @@ homeassistant:
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret home_altitude
+  external_url: !secret external_url
+  internal_url: !secret internal_url
 
 frontend:
   themes: !include_dir_merge_named themes
@@ -35,6 +37,8 @@ google_assistant:
 # Text to speech (google translate)
 tts:
   - platform: google_translate
+    base_url: https://192.168.107.15:8123
+    service_name: google_say
 
 # network speeds
 speedtestdotnet:
@@ -63,6 +67,7 @@ proxmoxve:
           - !secret proxmox_vm_one
           - !secret proxmox_vm_two
           - !secret proxmox_vm_three
+          - !secret proxmox_vm_four
 
 group: !include groups.yaml
 automation: !include_dir_merge_list automations/
