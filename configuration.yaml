@@ -38,13 +38,6 @@ weather:
   - platform: darksky
     api_key: !secret dark_sky_api
 
-# nzbget
-nzbget:
-  host: !secret nzbget_host
-  port: !secret nzbget_port
-  username: !secret nzbget_username
-  password: !secret nzbget_password
-
 # proxmox-ve
 proxmoxve:
   - host: !secret proxmox_ip
